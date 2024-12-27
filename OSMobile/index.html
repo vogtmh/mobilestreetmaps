@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>OSMobile</title>
+    <link href="css/default.css" rel="stylesheet" />
+    <link href="css/leaflet.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="loadingscreen">
+        <div id="loadingimage">&nbsp;</div>
+        <div id="loadingtext">Locating, please wait..</div>
+    </div>
+    <div id="map" ontouchmove="stopLocate()"></div>
+    <div class="ibutton" id="zoomin" onclick="zoomIn()"><img src="images/plus.png" /></div>
+    <div class="ibutton" id="zoomout" onclick="zoomOut()"><img src="images/minus.png" /></div>
+    <div class="ibutton" id="locatebutton" onclick="startLocate()"><img src="images/locate.png" /></div>
+    <div class="ibutton" id="zoomlevel"></div>
+    <div class="ibutton" id="settingsbutton" onclick="showSettings()"><img src="images/settings.png" /></div>
+    <div id="settings_overlay">
+        <div class="overlaycontainer">
+            <div id="settingslabel">Settings</div>
+            <div id="settingslist">tilebase: https://tiles.mavodev.de <br />maxautozoom: 17</div>
+            <div class="pwbutton" id="settings_confirm" onclick='alert("no service provided")'>OK</div>
+            <div class="pwbutton" id="settings_cancel" onclick='$("#settings_overlay").hide()'>Cancel</div>
+        </div>
+    </div>
+    <script src="js/jquery3.js"></script>
+    <script src="js/leaflet_1.9.4.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
