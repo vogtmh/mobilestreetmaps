@@ -95,13 +95,19 @@ html, body, #map {
 }
 
 #settings_confirm {
-    top: 180px;
+    top: 220px;
     left: 10%;
 }
 
 #settings_cancel {
-    top: 180px;
+    top: 220px;
     right: 10%;
+    display: none;
+}
+
+#infobox {
+    top: 250px;
+    left: 10%;
 }
 
 #zoomlevel {
@@ -209,4 +215,44 @@ html, body, #map {
 
 #zoomout img {
     width: 100%;
+}
+
+#inputDialog {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1300;
+}
+
+#dialogOverlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1200;
+}
+
+#inputDialog input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#inputDialog button {
+    margin: 5px;
+    background-color: #555;
+    color: #fff;
+}
+
+#infobox {
+    color: red;
 }

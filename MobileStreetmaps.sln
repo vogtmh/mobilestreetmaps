@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.35026.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "MobileStreetmaps", "OSMobile\MobileStreetmaps.jsproj", "{200142B1-5AE2-486A-9D0C-B76DD21F7893}"
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "MobileStreetmaps", "MobileStreetmaps\MobileStreetmaps.jsproj", "{200142B1-5AE2-486A-9D0C-B76DD21F7893}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

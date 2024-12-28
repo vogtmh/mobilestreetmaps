@@ -23,9 +23,17 @@
         <div class="overlaycontainer">
             <div id="settingslabel">Settings</div>
             <div id="settingslist">tilebase: https://tiles.mavodev.de <br />maxautozoom: 17</div>
-            <div class="pwbutton" id="settings_confirm" onclick='alert("no service provided")'>OK</div>
+            <div class="pwbutton" id="settings_confirm" onclick='$("#settings_overlay").hide()'>OK</div>
             <div class="pwbutton" id="settings_cancel" onclick='$("#settings_overlay").hide()'>Cancel</div>
+            <div id="infobox"></div>
         </div>
+    </div>
+    <div id="dialogOverlay"></div>
+    <div id="inputDialog">
+        <h3>New tilebase URL</h3>
+        <input type="text" id="userInput" placeholder="Type here..." />
+        <button id="okButton">OK</button>
+        <button id="cancelButton">Cancel</button>
     </div>
     <script src="js/jquery3.js"></script>
     <script src="js/leaflet_1.9.4.js"></script>
